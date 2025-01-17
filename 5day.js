@@ -40,7 +40,7 @@ $SearchBtn.on('click', function(event) {
     console.log(Input.value);
 
     // Fetch request to get current citys info
-    fetch('https://api.openweathermap.org/data/2.5/weather?q=' + Input.value + '&appid=ec96c3d6509b8a012ba07a86b8f2719b')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=' + Input.value + 'YOUR_API_KEY')
         .then(response => response.json())
         .then(data => {
             //console.log(data);
